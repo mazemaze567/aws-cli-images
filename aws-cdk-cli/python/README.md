@@ -12,7 +12,7 @@ docker build . --build-arg AWS_CDK_VERSION=<AWS-CDK-version> -t mazemaze567/aws-
 build-args (default):
 - `BASE_PYTHON_VERSION`: `3.8.6`
 - `NODE_VERSION`: `14.14.0`
-- `PIP_PIPENV_VERSION`: `2020.8.13`
+- `PIP_PIPENV_VERSION`: `2020.11.15`
 - `AWS_CDK_VERSION`: `latest`
 
 

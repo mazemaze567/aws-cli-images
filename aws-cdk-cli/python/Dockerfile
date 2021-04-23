@@ -14,8 +14,11 @@ RUN set -eux \
     && apt-get clean
 
 # Pipenv
-ARG PIP_PIPENV_VERSION=2020.8.13
-RUN pip install pipenv==${PIP_PIPENV_VERSION}
+ARG PIP_PIPENV_VERSION=2020.11.15
+RUN set -eux \
+    && pip install --upgrade pip \
+    && pip install --upgrade virtualenv \
+    && pip install pipenv==${PIP_PIPENV_VERSION}
 ENV PIPENV_VENV_IN_PROJECT=1
 
 # AWS CDK CLI
